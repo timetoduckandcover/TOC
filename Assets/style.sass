@@ -1,78 +1,218 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500")
+
+
+$orangeAccent: #EDA600
+$grey: #272F31
+$red: #FF1D00
+
 body
-	.header
-		background-image: url('DARK-DOG_COLORED_CROPPED.jpg')
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center
-		height: 700px
-		position: relative
-		nav
-			color: white
-			a
-				color: white
-			li
-				margin: 0 30px
-		.top-banner
-			color: yellow
-			background-color: grey
-			opacity: .7
-		.header-text
-			position: absolute
-			bottom: 100px
-			left: 45px
-			color: white
-	.featured-collections
-		img
-			position: relative
-		h3
-			position: absolute
-			color: white
-			border-top: 3px solid white
-			border-bottom: 3px solid white
-			top: 50%
-			left: 50%
-			transform: translate(-50%,-50%)
-			margin: 0
-	.free-shipping
-		img
-			position: relative
-		span
-			position: absolute
-			color: white
-			top: 50%
-			left: 25%
-			transform: translate(-50%,-50%)
-			margin: 0
-			font-size: 30px
-		strong
-			font-size: 50px
-			text-transform: uppercase
+  .wrapper
+    width: 1200px
+    margin: 0 auto
+  .header
+    background-image: url("BIG-WATCH CROPPED COLORED.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 700px
+    position: relative
+    font-family: 'Roboto', sans-serif
+    nav
+      color: white
+      a
+        color: white
+        text-transform: uppercase
+        font-weight: 100
+        &:hover
+          color: #d0ffec
+          text-decoration: none
+          cursor: pointer
+          border-bottom: 3px solid #d0ffec
+      li
+        margin: 30px 30px 0px 0px
+    .top-banner
+      color: #eda600
+      background-color: #ffffff
+      height: 40px
+      font-size: 12px
+      margin-bottom: 20px
+      p
+        padding-top: 11px
+    .header-text
+      position: absolute
+      top: 50%
+      color: white
+      width: 100%
+  .featured-collections
+    img
+      position: relative
+    h3
+      position: absolute
+      color: white
+      border-top: 3px solid white
+      border-bottom: 3px solid white
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      margin: 0
+  .free-shipping
+    img
+      position: relative
+    span
+      position: absolute
+      color: white
+      top: 50%
+      left: 25%
+      transform: translate(-50%, -50%)
+      margin: 0
+      font-size: 30px
+    strong
+      font-size: 50px
+      text-transform: uppercase
+  .content
+    width: 100%
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7)
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7)
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7)
+  .footer
+    background-image: url("footer.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: left
+    max-width: 900px
+    margin: 0 auto
+    opacity: 0.7
+    padding-top: 50px
+    padding-bottom: 20px
+    position: relative
+    a
+      color: black
+
+.logo
+  margin-left: 65px
+
+.main-nav
+  height: 70px
+  background-color: rgba(56, 56, 56, 0.5)
+  position: absolute
+  width: 100%
+  bottom: 0
+  margin: 0
+  padding: 0 50px
+  ul
+    margin-left: 100px
+  li
+    color: #fff
+    text-transform: uppercase
+    font-weight: 100
+    margin-top: 25px
+    margin-right: 100px
+    a
+      color: #fff
+
+.blue
+  text-align: center
+  color: #6790b5
+
+.home-overlay
+  
+  padding-right: 30px
+  padding-left: 30px
+
+.smart-watch
+  padding-left: 0
+  padding-right: 0
+.search-wrap
+  position: relative
+  margin: 0 !important
+  margin-top: 22.5px !important
+  input
+    background-color: transparent
+    border: 1px solid white
+    border-radius: 0
+    height: 25px
+    width: 190px
+  ::-webkit-input-placeholder
+    color: white
+
+  :-moz-placeholder
+    color: white
+
+  ::-moz-placeholder
+    color: white
+
+  :-ms-input-placeholder 
+    color: white
+.search-icon
+  position: absolute
+  left: 65px
+  top: 5px
+  img
+    width: 12px
+    height: auto
+
+.blog-promo
+  background-color: #231f20
+  color: #ffffff
+  height: 281px
 
 
-	.content
-		width: 100%
-		-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.7)
-		-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.7)
-		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.7)
+/*promo seciton*/
+.promo-background
+  background-color: #231f20
+.blue
+hr.yellow
+  display: inline-block
+  width: 30px
+  margin-bottom: 10px
+  border-top: 2px solid $orangeAccent
+.promo-text
+  h1
+    color: $red
+  button
+    color: $red
+    border: 1px solid $red
+    border-radius: 0
+    font-size: 18px
 
-	.footer
-		background-image: url('footer.jpg')
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: left
-		height: 260px
-		width: 100%
-		opacity: .7
-		padding: 50px 0
-		padding-left: 300px
-		position: relative
-		a
-			color: black
+/*footer*/
+.footer
+  h6
+    color: $orangeAccent
+    margin-bottom: 30px
+  li
+    font-size: 12px
+  .copyright
+    margin-top: 60px
+  input
+    width: 100%
+    background-color: $grey
+    border-radius: 0
+  ::-webkit-input-placeholder
+    color: white
 
-	.row
-		margin-top: 7px
-		margin-left: -12.5px
-		margin-right: -12.5px
-		div
-			padding-left: 3.5px
-			padding-right: 3.5px
+  :-moz-placeholder
+    color: white
+
+  ::-moz-placeholder
+    color: white
+
+  :-ms-input-placeholder 
+    color: white
+.social-icons
+  img
+    width: 35px
+    height: 35px
+.orange
+  color: $orangeAccent !important
+
+
+
+
+
+
+
+
+
+
+
