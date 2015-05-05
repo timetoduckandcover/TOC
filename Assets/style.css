@@ -1,6 +1,8 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,500");
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
 body .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto; }
 body .header {
   background-image: url("BIG-WATCH CROPPED COLORED.jpg");
@@ -9,7 +11,7 @@ body .header {
   background-position: center;
   height: 700px;
   position: relative;
-  font-family: "Roboto", sans-serif; }
+  font-family: 'Karla', sans-serif; }
   body .header nav {
     color: white; }
     body .header nav a {
@@ -26,14 +28,15 @@ body .header {
   body .header .top-banner {
     color: #eda600;
     background-color: #ffffff;
-    height: 40px;
-    font-size: 12px;
+    height: 60px;
+    font-size: 14px;
     margin-bottom: 20px; }
+
     body .header .top-banner p {
-      padding-top: 11px; }
+      }
   body .header .header-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     color: white;
     width: 100%; }
 body .featured-collections img {
@@ -62,9 +65,8 @@ body .free-shipping strong {
   text-transform: uppercase; }
 body .content {
   width: 100%;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.7); }
+  border-bottom: 1px solid #666666;
+  }
 body .footer {
   background-image: url("footer.jpg");
   background-size: cover;
@@ -103,7 +105,7 @@ body .footer {
 
 .blue {
   text-align: center;
-  color: #6790b5; }
+  color: #45555f; }
 
 .home-overlay {
   padding-right: 30px;
@@ -151,14 +153,30 @@ hr.yellow {
   display: inline-block;
   width: 30px;
   margin-bottom: 10px;
-  border-top: 2px solid #EDA600; }
+  border-top: 1px solid #cccccc; }
 
-.promo-text h1 {
-  color: #FF1D00; }
+ .promo-text{
+  padding:50px 0px;
+  border-top:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin:40px 0px;
+ } 
+
+ .left-menu{
+  margin: 30px 0px;
+ }
+
+ .left-menu h4{
+  border-bottom: 3px double #cccccc; 
+  color:#45555f;
+ }
+
+.promo-text h2 {
+  color: #EDA600; }
+
 .promo-text button {
-  color: #FF1D00;
-  border: 1px solid #FF1D00;
-  border-radius: 0;
+  color: #45555f;
+  border: 1px solid #45555f;
   font-size: 18px; }
 
 /*footer */
@@ -174,7 +192,8 @@ hr.yellow {
     margin-top: 60px; }
   .footer input {
     width: 100%;
-    background-color: #272F31;
+    border: 1px solid #666666;
+    color:#666666;
     border-radius: 0; }
   .footer ::-webkit-input-placeholder {
     color: white; }
@@ -187,5 +206,228 @@ hr.yellow {
 
 .orange {
   color: #EDA600 !important; }
+
+.product-info{
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin:10px 0px;
+  color:#45555f;
+}  
+
+.product-price{
+  font-size:1.4em;
+  margin-bottom:10px;
+}
+
+.left-navigation {
+  margin:20px 0px;
+}
+
+.left-navigation li{
+  list-style-type: none;
+}
+
+.left-navigation li a{
+  color:#999999;
+}
+
+.left-navigation li a:hover{
+  color:#45555f;
+}
+
+.product-loop{
+  margin:40px 0px;
+  text-align: center;
+}
+
+.product{
+  transition: all 0.5s ease;
+}
+
+.product:hover{
+  opacity:0.5;
+}
+
+.collection-header{
+  background-image: url("collection-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.collection-main-nav{
+  height: 70px;
+  background-color: rgba(56, 56, 56, 0.5);
+  position: absolute;
+  width: 100%;
+  margin-top: -22px;
+  padding: 0 50px;
+}
+
+.collection-main-nav ul {
+    margin-left: 100px; }
+  .collection-main-nav li {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-right: 100px; }
+    .collection-main-nav li a {
+      color: #fff; }
+
+  .collection-header .top-banner {
+    color: #eda600;
+    background-color: #ffffff;
+    height: 60px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .collection-header .top-banner p{
+  }
+
+.product-main{
+  margin:40px 0px;
+  color:#666666;
+
+}
+
+.options{
+  border-top:1px solid #eeeeee;
+  border-bottom:1px solid #eeeeee;
+  padding-bottom: 20px;
+}
+
+.quantity{
+  border-bottom:1px solid #eeeeee;
+  margin:0px 0px;
+  padding-bottom: 20px;
+
+}
+
+.quantity input{
+  text-align: center;
+  width:50px;
+}
+
+.description{
+  padding:10px 0px;
+}
+
+.thumbnails{
+  margin:10px 0px;
+}
+
+.product-add{
+  margin:20px 0px;
+  text-align: center;
+}
+
+.product-header{
+  background-image: url("close-watch-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.product-header .top-banner {
+    color: #eda600;
+    background-color: #ffffff;
+    height: 60px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+.product-header .top-banner{
+}  
+
+.addtocart{
+  background-color:#272f31;
+  width:60%;
+  color:#fff;
+  border:0px;
+  text-transform: uppercase;
+  margin:10px 0px;
+}
+
+.addtocart a{
+  color:#fff;
+}
+
+.addtocart:hover{
+  background-color:#666666;
+  color:#ffffff;
+}
+
+.loop-price{
+  font-size:1em;
+}
+
+.promo{
+  padding:10px 0px;
+  color:teal;
+}
+
+.promo a{
+  color:teal;
+}
+
+.cart-info {
+  border-left:1px solid #666666;
+  padding-left:40px;
+}
+
+.cart-detail{
+  font-size:0.9em;
+}
+
+#quantity{
+  width:20%;
+  margin-left: 5px;
+}
+
+.cart-products{
+  margin-top:20px;
+}
+
+.line-item{
+  margin:10px 0px;
+}
+
+.home-header{
+  font-size:56px;
+  font-family: 'Playfair Display', serif;
+}
+
+.currency{
+  color:#666666;
+  padding-top:10px;
+}
+
+.cart{
+  padding-top: 10px;
+  color:#666666;
+}
+
+.overlay{
+  color:#fff;
+  position:absolute;
+  z-index:1;
+}
+
+.promo-header{
+  padding-top:10px;
+}
+
+@media (max-width: 768px) {
+.hide-small{
+  display:none;
+}
+}
 
 /*# sourceMappingURL=style.css.map */

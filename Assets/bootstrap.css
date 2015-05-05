@@ -1086,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1106,8 +1106,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: #eeeeee;
 }
 a:focus {
   outline: thin dotted;
@@ -1192,7 +1191,7 @@ h6,
   font-family: inherit;
   line-height: 1.3;
   color: inherit;
-  text-transform: uppercase;
+  text-transform: none;
 }
 h1 small,
 h2 small,
@@ -1293,7 +1292,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 10px 0px;
 }
 .lead {
   margin-bottom: 20px;
